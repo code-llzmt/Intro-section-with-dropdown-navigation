@@ -1,0 +1,16 @@
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 18px;
+}
+
+body{
+    width: clamp(375px, 100%, 1440px);
+    margin-inline: auto;
+
+    border: 2px solid red;
+}
+
