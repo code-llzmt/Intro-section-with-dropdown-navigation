@@ -1,0 +1,72 @@
+
+/* epilogue-500 (medium) - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/epilogue-v17-latin/epilogue-v17-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../assets/fonts/epilogue-v17-latin/epilogue-v17-latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* epilogue-700 (bold) - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/epilogue-v17-latin/epilogue-v17-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../assets/fonts/epilogue-v17-latin/epilogue-v17-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+body{
+    font-family: 'Epilogue';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*
+- Almost White: hsl(0, 0%, 98%)
+- Medium Gray: hsl(0, 0%, 41%)
+- Almost Black: hsl(0, 0%, 8%)
+*/
+
+h1{
+    font-size: 81px; /* 4.5rem */
+    font-weight: 700;
+    color: hsl(0, 0%, 8%); /* Almost Black */
+}
+
+p{
+    font-size: 18px; /* 1rem */
+    font-weight: 500;
+    color: hsl(0, 0%, 41%); /* Medium Gray */
+    line-height: 1.5;
+}
+
+@media (width <= 425px){
+    p{
+        font-size: 16px; /* 1rem */
+    }
+}
+
+.main-btn{
+    font-size: 18px; /* 1rem */
+    font-weight: 700;
+    color: hsl(0, 0%, 98%); /* Almost White */
+    background-color: hsl(0, 0%, 8%); /* Almost Black */
+    border: 1px solid hsl(0, 0%, 8%); /* Almost Black */
+    border-radius: 1rem;
+    height: 3rem;
+    width: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.main-btn:hover{
+    color: hsl(0, 0%, 8%); /* Almost Black */
+    background-color: hsl(0, 0%, 98%); /* Almost White */
+    border: 1px solid hsl(0, 0%, 8%); /* Almost Black */
+}
